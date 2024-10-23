@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h2 id="question">Question Text</h2>
+        <div id="hint-container" class="hidden">Hint: <span id="hint-text"></span></div>
+        <div class="timer-container">Time left: <span id="timer">30</span>s</div>
+        <ul>
+            <li>
+                <input type="radio" id="a" name="answer" class="answer">
+                <label for="a" id="a_text">Answer A</label>
+            </li>
+            <li>
+                <input type="radio" id="b" name="answer" class="answer">
+                <label for="b" id="b_text">Answer B</label>
+            </li>
+            <li>
+                <input type="radio" id="c" name="answer" class="answer">
+                <label for="c" id="c_text">Answer C</label>
+            </li>
+            <li>
+                <input type="radio" id="d" name="answer" class="answer">
+                <label for="d" id="d_text">Answer D</label>
+            </li>
+        </ul>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <button id="hint-btn">Show Hint</button>
+        <button id="submit">Submit</button>
+        <div id="leaderboard-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
